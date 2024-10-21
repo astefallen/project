@@ -1,0 +1,693 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  cursor: pointer;
+}
+
+.title {
+  font-size: 45px;
+  margin-bottom: 38px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1720px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+
+header {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.header__logo__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.header__logo__block>img {
+  min-width: 300px;
+  width: 40%;
+}
+
+.header__phone div {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header__phone div img {
+  width: 40px;
+  height: 40px;
+}
+
+.header__phone div a {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header nav a {
+  font-size: 22px;
+  padding-bottom: 2px;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 300ms;
+}
+
+header nav a:hover {
+  border-bottom: 3px solid #f78d29;
+}
+
+.header__phone div img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+#main {
+  margin-bottom: 50px;
+}
+
+.main__inner {
+  display: flex;
+  align-items: stretch;
+}
+
+.main__inner img {
+  width: 50%;
+}
+
+.main__info {
+  width: 50%;
+  background-color: #22678a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.orange {
+  color: #f78d29;
+}
+
+.main__info h4 {
+  font-size: 70px;
+  text-transform: uppercase;
+  width: 80%;
+  line-height: 80px;
+  letter-spacing: 2px;
+}
+
+.main__info h6 {
+  font-size: 45px;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+
+.main__info__btn {
+  width: 80%;
+  position: relative;
+  overflow: hidden;
+}
+
+.main__info button {
+  display: block;
+  width: 100%;
+  height: 60px;
+  background-color: #f78d29;
+  border: 0;
+  color: white;
+  font-size: 35px;
+}
+
+.blic {
+  position: absolute;
+  top: -60px;
+  left: -100px;
+  width: 30px;
+  height: calc(100% + 120px);
+  background-color: rgba(255, 255, 255, 0.595);
+  transform: rotate(45deg);
+  animation-name: blic;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+.convector__block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.convector__item {
+  min-width: 400px;
+  width: 33%;
+}
+
+.convector__img {
+  width: 100%;
+  height: 150px;
+  background-image: url('images/con-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.convector__img__3 {
+  background-image: url('images/con-2.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.convector__info {
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+  word-wrap: break-word;
+  height: 93px;
+}
+
+.or_info {
+  background-color: #f78d29;
+}
+
+.blue_info {
+  background-color: #22678a;
+}
+
+.or_fon {
+  background-color: #f78d2977;
+}
+
+.blue_fon {
+  background-color: #22678a70;
+}
+
+.fon {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  transition: opacity 300ms;
+}
+
+.convector__img:hover>.fon {
+  opacity: 1;
+}
+
+@keyframes blic {
+  0% {
+    top: -60px;
+    left: -100px;
+  }
+
+  80% {
+    top: -60px;
+    left: -100px;
+  }
+
+  100% {
+    top: -60px;
+    left: calc(100% + 150px);
+  }
+}
+
+.production_consultation__block {
+  margin-top: 50px;
+  margin-bottom: 67px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.production_consultation {
+  display: inline-block;
+  color: #fff;
+  background-color: #f88a23;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+  min-width: 400px;
+  width: 33%;
+  font-size: 25px;
+  transition: transform 300ms;
+}
+
+.production_consultation__block .production_consultation:nth-child(2) {
+  background-color: white !important;
+  color: #22678a !important;
+  border: 2px solid #22678a;
+}
+
+.production_consultation:hover {
+  transform: scale(1.03);
+}
+
+.production_features_list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.production_features_item {
+  background-color: #e8e9eb;
+  width: 430px;
+  padding: 38px 37px 20px 52px;
+}
+
+.production_features_text_black {
+  margin-top: 15px;
+}
+
+.production_features_text_white {
+  margin-top: 15px;
+}
+
+.production_features_item_blue {
+  background-color: #226689;
+  width: 430px;
+  padding: 38px 37px 20px 52px;
+  color: white;
+}
+
+#about_company {
+  margin-top: 50px;
+
+}
+
+.company img {
+  width: 100%;
+  height: 100%;
+}
+
+.company {
+  background-image: url(images/about_company.jpeg);
+  display: flex;
+}
+
+.company h1 {
+  padding-top: 25px;
+}
+
+.company p {
+  padding-top: 10px;
+}
+
+.left_side {
+  width: 50%;
+  height: 50%;
+  color: white;
+  margin-left: 52px;
+}
+
+.right_side {
+  width: 50%;
+  align-items: end;
+}
+
+.how_we_work {
+  width: 100px;
+}
+
+
+.scheme_how_we_work {
+  margin-top: 25px;
+  font-size: 45px;
+}
+
+.scheme_of_work_list {
+  padding: 0;
+  padding-top: 126px;
+  background-image: url(images/how_we_work.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 179px;
+  font: 29px / 43px Circe-Regular;
+  color: #fff;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+.our__works_header {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+#our_works {
+  margin-top: 50px;
+  font-size: 25px;
+  color: white;
+  width: 100%;
+  height: 100%;
+  background-color: #226689;
+}
+
+.our_works_left {
+  width: 60%;
+  height: 600px;
+}
+
+.our_works_left img {
+  width: 100%;
+  height: 100%;
+}
+
+.our_works__block {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 60px;
+  gap: 50px;
+}
+
+.our_works_right {
+  position: relative;
+  height: 600px;
+  width: 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.our_works_right img {
+  width: 100%;
+  height: 190px;
+  transition: transform 300ms;
+}
+
+.our_works_right img.active {
+  transform: scale(1.05);
+}
+
+#arrow_left,
+#arrow_right {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+#arrow_right {
+  transform: rotate(180deg);
+}
+
+#arrow_left {
+  right: 40px;
+}
+
+#conlux_advantages {
+  display: flex;
+}
+
+.conlux_advantages_left img {
+  width: 100%;
+  height: 100%;
+}
+
+.conlux_advantages_left {
+  width: 45%;
+}
+
+.conlux_advantages_right {
+  background-image: url('images/conlux__advantages.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 55%;
+  padding: 30px 0 30px 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.conlux_advantages_right h3 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.conlux_advantages_right ul {
+  font-size: 20px;
+  padding-left: 30px;
+}
+
+.conlux_advantages_right button {
+  border: 2px solid white;
+  padding: 5px 20px;
+  color: white;
+  font-size: 28px;
+  background-color: transparent;
+  max-width: 380px;
+}
+
+#partners {
+  margin-bottom: 80px;
+}
+
+.partners h1 {
+  margin-top: 30px;
+}
+
+.partners_rusclimat img {
+  width: 418px;
+  height: 63px;
+}
+
+.partners_technologia img {
+  width: 145px;
+  height: 80px;
+}
+
+.partners_technologia img {
+  width: 207px;
+  height: 68px;
+}
+
+.partners_list {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.partners__list {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.partners__list img {
+  width: 292px;
+  height: 111px;
+}
+
+.left_side_contacts {
+  font-size: 25px;
+}
+
+.left_side_contacts img {
+  max-width: 340px;
+}
+
+.bottom_contacts {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+
+
+.footer__map {
+  transform: translateY(-15px);
+  width: 650px;
+  margin-left: 20px;
+}
+
+.right_side_contacts {
+  background-color: #226689;
+  max-width: 280px;
+  padding: 20px 30px;
+  max-height: 350px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateY(-15px);
+}
+
+.right_side_contacts p:first-child {
+  font-size: 14px;
+}
+
+.right_side_contacts p:nth-child(2) {
+  font-size: 12px;
+}
+
+.right_side_contacts input {
+  padding: 10px 5px;
+  border: 0;
+  outline: none;
+}
+
+.right_side_contacts button {
+  background-color: transparent;
+  padding: 10px 0px;
+  font-size: 16px;
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
+}
+
+#modal_contact__cont {
+  display: none;
+}
+
+#modal_contact__cont.active {
+  display: block;
+}
+
+.modal__contact__fon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+.modal_contact {
+  position: fixed;
+  top: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #226689;
+  padding: 40px;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 11;
+}
+
+.modal_contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal__contact__title {
+  font-size: 30px;
+  text-align: center;
+}
+
+.modal_contact input {
+  height: 40px;
+  padding-left: 30px;
+}
+
+.modal_contact button {
+  background-color: transparent;
+  border: 2px solid white;
+  font-size: 25px;
+  height: 40px;
+  color: white;
+  transition: all 300ms;
+}
+
+.modal_contact img {
+  display: block;
+  cursor: pointer;
+  margin-left: auto;
+  width: 50px;
+}
+
+.modal_contact button:hover {
+  background-color: white;
+  color: #22678a;
+}

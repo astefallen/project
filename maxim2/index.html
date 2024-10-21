@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conlux</title>
+</head>
+
+<body>
+    <div id="modal_contact__cont">
+        <div class="modal_contact">
+            <img onclick="close_modal('modal_contact__cont')" src="images/close.png" alt="">
+            <div class="modal__contact__title">Введите свои данные, наш специалист свяжется с вами в течении 15 минут
+            </div>
+            <form action="send.php" method="post">
+                <input name="name" type="text" placeholder="Имя">
+                <input name="phone" type="text" placeholder="Телефон">
+                <button>Связаться</button>
+            </form>
+        </div>
+        <div class="modal__contact__fon"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="header__logo__block">
+                <img src="images/ConluxLogo.png" alt="conlux">
+                <div class="header__phone">
+                    <div>
+                        <img src="images/phone-call.webp" alt="conlux">
+                        <a href="tel:403427">+7(8672)40-34-27</a>
+                    </div>
+                    <div>
+                        <img src="images/phone-call.webp" alt="conlux">
+                        <a href="tel:403427">+7(8672)40-34-27</a>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <a href="index.html">Главная</a>
+                <a href="#abt_company">О компании</a>
+                <a href="#convector">Продукция</a>
+                <a href="#conlux_advantages">Преимущества</a>
+                <a href="#our_works">Наши работы</a>
+                <a href="#footer">Контакты</a>
+                <a href="#partners">Сотрудничество</a>
+            </nav>
+        </header>
+        <main>
+            <section id="main">
+                <div class="main__inner">
+                    <img src="images/photoconvector.png" alt="conlux">
+                    <div class="main__info">
+                        <h4>современный <br> конвектор <br> отопления</h4>
+                        <h6><span class="orange">Всего за</span> 5900 р/пог.м
+                        </h6>
+                        <div class="main__info__btn">
+                            <div class="blic"></div>
+                            <button onclick="open_modal('modal_contact__cont')" class="get__convector_btn">Заказать
+                                конвектор</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="convector">
+                <div class="convector__inner">
+                    <div class="title">Конвекторы, встраиваемые в пол</div>
+                    <div class="convector__block">
+                        <div class="convector__item">
+                            <div class="convector__img">
+                                <div class="or_fon fon"></div>
+                            </div>
+                            <div class="convector__info or_info">
+                                Естественная
+                                циркуляция воздуха
+                            </div>
+                        </div>
+                        <div class="convector__item">
+                            <div class="convector__img">
+                                <div class="blue_fon fon"></div>
+                            </div>
+                            <div class="convector__info blue_info">
+                                Принудительная циркуляция воздуха
+                            </div>
+                        </div>
+                        <div class="convector__item ">
+                            <div class="convector__img convector__img__3">
+                                <div class="or_fon fon"></div>
+                            </div>
+                            <div class="convector__info or_info">
+                                Нестандартные конвекторы
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="production_consultation__block">
+                            <a class="production_consultation" href="#">Посмотреть
+                                всю
+                                продукцию</a>
+                            <button onclick="open_modal('modal_contact__cont')" class="production_consultation"
+                                href="#">Заказать
+                                консультацию</button>
+                            <a href="conlux_prais_osnov.xls" download class="production_consultation" href="#">Скачать
+                                прайс</a>
+                        </div>
+                        <div class="production_features_list">
+                            <div class="production_features_item"><img src="images/production_features_1.jpg" alt="">
+                                <p class="production_features_text_black">
+                                    Внесены в Росреестр<br> предприятий</p>
+                            </div>
+                            <div class="production_features_item_blue"><img src="images/production_features_2.jpg"
+                                    alt="">
+                                <p class="production_features_text_white">
+                                    Участники выставки<br>"AQUATHERM 2020"</p>
+                            </div>
+                            <div class="production_features_item"><img src="images/production_features_3.jpg" alt="">
+                                <p class="production_features_text_black">Один
+                                    из Пионеров<br>производства конвекторов в
+                                    России<br></p>
+                            </div>
+                            <div class="production_features_item_blue"><img src="images/production_features_4.jpg"
+                                    alt="">
+                                <p class="production_features_text_white">Первая
+                                    компания в ЮФО - по производству конвекторов
+                                    отопления
+                            </div>
+                        </div>
+            </section>
+            <section id="about_company">
+                <div class="company">
+                    <div class="left_side">
+                        <h1 id="abt_company">О компании</h1>
+                        <p>Российская компания ООО «Ядро» производит приборы
+                            отопления под торговой маркой Conlux. Мы разрабатываем и
+                            изготавливаем корпуса, теплообменники, решётки
+                            конвекторов, используя качественное оборудование
+                            зарубежных и отечественных производителей. Каждый этап
+                            производства компонентов отопительных приборов
+                            сопровождается тщательным контролем качества материалов
+                            и работ. Контроль осуществляется опытными специалистами,
+                            имеющими соответствующую квалификацию.</p>
+                        <p>Высокое качество продукции Conlux и добрые
+                            взаимоотношения с нашими клиентами и партнерами
+                            обусловлены слаженной работой нашего дружного
+                            коллектива, состоящего из высококвалифицированных и
+                            амбициозных специалистов, чье гармоничное взаимодействие
+                            нацелено на дальнейшее развитие и продвижение бренда на
+                            лидирующие позиции мирового рынка отопительных систем.
+                            Мы гордимся нашей продукцией и хотим, чтобы Вы оценили
+                            её достоинства, остановив свой выбор на конвекторах
+                            марки Conlux.</p>
+                    </div>
+                    <div class="right_side">
+                        <img src="images/about_company_img.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section id="work_proccess">
+                <div class="scheme_how_we_work">Как мы работаем</div>
+                <div class="scheme_of_work_list">
+                    <div class="scheme_of_work_item">Звонок</div>
+                    <div class="scheme_of_work_item">Консультация</div>
+                    <div class="scheme_of_work_item">Расчет</div>
+                    <div class="scheme_of_work_item">Оплата</div>
+                    <div class="scheme_of_work_item">Отгрузка</div>
+                </div>
+            </section>
+            <section id="our_works">
+                <div class="our__works_header">
+                    <h1 id="our_works">Наши работы</h1>
+                </div>
+                <div class="our_works__block">
+                    <div class="our_works_left">
+                        <img src="images/our_work_left.jpg">
+                    </div>
+                    <div class="our_works_right">
+                        <img onclick="replace_img(this)" class="chocolate_img active" src="images/our_work_left.jpg">
+                        <img onclick="replace_img(this)" class="chocolate_img" src="images/1594210925-slide_2.jpg">
+                        <img onclick="replace_img(this)" class="chocolate_img" src="images/1594210925-slide_3.jpg">
+                        <img onclick="replace_img(this)" class="chocolate_img" src="images/1594210925-slide_4.jpg">
+                        <img onclick="replace_img(this)" class="chocolate_img" src="images/1594210925-slide_5.jpg">
+                        <img onclick="replace_img(this)" class="chocolate_img" src="images/1594210925-slide_6.jpg">
+                        <img onclick="arrow_replace('-')" id="arrow_left" src="images/right.jpg">
+                        <img onclick="arrow_replace('+')" id="arrow_right" src="images/right.jpg">
+                    </div>
+                </div>
+            </section>
+            <section id="conlux_advantages">
+                <div class="conlux_advantages_left"><img src="images/conlux_advantages.png"></div>
+                <div class="conlux_advantages_right">
+                    <div>
+                        <h3>Основными преимуществами конвекторов водяного отопления Сonlux являются:</h3>
+                        <ul>
+                            <li>простота эксплуатации;</li>
+                            <li>равномерный и быстрый нагрев помещений;</li>
+                            <li>использование исключительно высококачественных материалов;</li>
+                            <li>корпус и внутренние элементы конвектора хорошо защищены от коррозии;</li>
+                            <li>широкий диапазон типоразмеров приборов</li>
+                        </ul>
+                    </div>
+                    <button onclick="open_modal('modal_contact__cont')">Заказать консультацию</button>
+                </div>
+            </section>
+            <section id="partners">
+                <h1 id="partners">Партнеры</h1>
+                <div class="partners_list">
+                    <div class="partners_rusclimat"><img src="images/partners_rusclimat.png"></div>
+                    <div class="partners_technologia"><img src="images/partners_technologia.jpg"></div>
+                    <div class="partners_santehgaz"><img src="images/partners_santehgaz.jpg"></div>
+                </div>
+                <div class="partners__list">
+                    <h1>Эксклюзивный <br>представитель в России</h1>
+                    <img src="images/partners_termotactic.png">
+                    <h1>Официальный представитель <br>в СКФО И ЮФО</h1>
+                    <img src="images/partners_kss.png">
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <section class="bottom_contacts">
+                <div class="left_side_contacts">
+                    <div>
+                        <img src="images/left_side_phone.jpg" alt="">
+                        <a href="403427">+7 (8672) 40-34-27</a>
+                    </div>
+                    <div>
+                        <img src="images/left_side_phone.jpg" alt="">
+                        <a href="403427">+7 (918) 704-46-18</a>
+                    </div>
+                    <div>
+                        <a href="">E-mail: conlux-2012@mail.ru</a>
+                    </div>
+                    <div>РСО-Алания, г. Владикавказ</div>
+                    <a href="">ул. Пожарского, 47</a>
+                    <div>Режим работы:
+                        с 9:00 до 17:00</div>
+                    <img src="images/ConluxLogo.png">
+                </div>
+                <div class="footer__map">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A2d6d8e703e83ac5d0cd1bd4b8f7501fe97b15a69283c00d9496ba02bcbd0528b&amp;source=constructor"
+                        width="100%" height="500" frameborder="0"></iframe>
+                </div>
+                <div class="right_side_contacts">
+                    <p>У вас остались вопросы? Мы готовы
+                        на них ответить. Оставьте заявку и наш
+                        менеджер свяжется с Вами!</p>
+                    <p>* Отправляя информацию, Вы соглашаетесь
+                        с политикой обработки персональных данных
+                    </p>
+                    <input type="text" id="name_user" placeholder="Имя">
+                    <input type="text" id="phone_user" placeholder="Телефон">
+                    <button>Отправить</button>
+                </div>
+            </section>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
